@@ -3,113 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Mariano Lauge</title>
+  <title>Portfolio – Mariano Lauge</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: #e6e6e6;
       line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
     }
+
     header {
-      background: #222;
-      color: #fff;
-      padding: 20px 0;
+      background-color: #1a1a1a;
+      padding: 2rem;
       text-align: center;
+      border-bottom: 2px solid #b30000;
     }
+
     header h1 {
       margin: 0;
+      font-size: 2.5rem;
+      color: #e6e6e6;
+      letter-spacing: 2px;
     }
-    .container {
-      width: 80%;
-      margin: auto;
-      overflow: hidden;
-      padding: 20px 0;
+
+    header p {
+      font-size: 1.2rem;
+      color: #bfbfbf;
     }
-    h2 {
-      margin-top: 40px;
-      color: #444;
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
     }
-    .portfolio-item {
-      background: #fff;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    section h2 {
+      color: #b30000;
+      margin-top: 0;
+      font-size: 1.8rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
     }
-    a.button {
+
+    .card {
+      background-color: #262626;
+      margin: 1rem 0;
+      padding: 1.2rem;
+      border-radius: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(179, 0, 0, 0.6);
+    }
+
+    .card h3 {
+      margin: 0 0 0.5rem 0;
+      color: #ffffff;
+    }
+
+    .card a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #222;
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      background-color: #b30000;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 0.9rem;
     }
-    a.button:hover {
-      background: #555;
+
+    .card a:hover {
+      background-color: #e60000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #808080;
+      border-top: 1px solid #333;
+    }
+
+    footer a {
+      color: #b30000;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Mariano Lauge</h1>
-    <p>Guionista · Storyteller</p>
+    <p>Guionista & Narrador Audiovisual</p>
   </header>
 
-  <div class="container">
-    <section id="about">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy Mariano Lauge, guionista y narrador con base en Argentina y España. 
-        Vengo del mundo de la publicidad, donde aprendí a contar historias con ritmo, 
-        impacto y emoción. Esa experiencia me marcó la mirada: pensar lo audiovisual 
-        no solo como entretenimiento, sino como un puente para conectar con la gente.
-      </p>
-      <p>
-        Hoy me dedico a la escritura de guiones para cine y televisión, abierto a distintos géneros y formatos. 
-        Me interesan los personajes complejos, las tensiones humanas y las historias que incomodan tanto como emocionan.
-      </p>
-      <p>
-        Busco colaborar en proyectos donde la narrativa tenga peso propio, con la idea de seguir creciendo 
-        y aportando una voz personal al relato audiovisual.
-      </p>
-      <p>📩 <a href="mailto:lauqe.mariano@gmail.com">lauqe.mariano@gmail.com</a></p>
-    </section>
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy Mariano Lauge, guionista y narrador con base en Argentina y España. Vengo del mundo de la publicidad, donde aprendí a contar historias con ritmo, impacto y emoción. Esa experiencia me marcó la mirada: pensar lo audiovisual no solo como entretenimiento, sino como un puente para conectar con la gente.
+    </p>
+    <p>
+      Hoy me dedico a la escritura de guiones para cine y televisión, abierto a distintos géneros y formatos. Me interesan los personajes complejos, las tensiones humanas y las historias que incomodan tanto como emocionan.
+    </p>
+    <p>📩 <a href="mailto:lauge.mariano@gmail.com">lauge.mariano@gmail.com</a></p>
+  </section>
 
-    <section id="portfolio">
-      <h2>Guiones</h2>
-      <div class="portfolio-item">
-        <h3>Los peligros de no ser de ningún lado</h3>
-        <a href="#" class="button">Leer sinopsis</a>
-      </div>
-      <div class="portfolio-item">
-        <h3>El precio de las cosas</h3>
-        <a href="#" class="button">Leer sinopsis</a>
-      </div>
-      <div class="portfolio-item">
-        <h3>Día de caza</h3>
-        <a href="#" class="button">Leer sinopsis</a>
-      </div>
-      <div class="portfolio-item">
-        <h3>Fantasías sintéticas</h3>
-        <a href="#" class="button">Leer sinopsis</a>
-      </div>
-    </section>
+  <section id="guiones">
+    <h2>Guiones</h2>
+    <div class="card">
+      <h3>Los peligros de no ser de ningún lado</h3>
+      <a href="#">Leer sinopsis</a>
+    </div>
+    <div class="card">
+      <h3>El precio de las cosas</h3>
+      <a href="#">Leer sinopsis</a>
+    </div>
+    <div class="card">
+      <h3>Día de caza</h3>
+      <a href="#">Leer sinopsis</a>
+    </div>
+    <div class="card">
+      <h3>Fantasías sintéticas</h3>
+      <a href="#">Leer sinopsis</a>
+    </div>
+  </section>
 
-    <section id="ads">
-      <h2>Publicidad</h2>
-      <div class="portfolio-item">
-        <h3>Campaña 1</h3>
-        <a href="#" class="button">Ver video</a>
-      </div>
-      <div class="portfolio-item">
-        <h3>Campaña 2</h3>
-        <a href="#" class="button">Ver video</a>
-      </div>
-    </section>
-  </div>
+  <section id="publicidad">
+    <h2>Publicidad</h2>
+    <div class="card">
+      <h3>Campaña X</h3>
+      <a href="#">Ver video</a>
+    </div>
+    <div class="card">
+      <h3>Campaña Y</h3>
+      <a href="#">Ver video</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Mariano Lauge – Portfolio | Desarrollado en <a href="https://pages.github.com/">GitHub Pages</a>
+  </footer>
 </body>
 </html>
